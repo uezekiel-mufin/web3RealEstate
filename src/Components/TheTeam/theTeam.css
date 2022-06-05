@@ -1,0 +1,61 @@
+.team__h2 {
+  display: flex;
+  justify-content: center;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 120%;
+  text-align: center;
+  text-transform: uppercase;
+
+  background: linear-gradient(92.47deg, #00b3fc 1.25%, #ffefa5 89.64%), #ffffff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.teamdetails {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.socials {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 38px;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.teamPosition {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+@media (max-width: 800px) {
+  .team {
+    margin: 5rem 0;
+  }
+  .teamdetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  .team__h2 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+}

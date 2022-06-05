@@ -1,0 +1,151 @@
+.land {
+  height: 1110px;
+
+  background: #ffffff;
+  mix-blend-mode: normal;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 1rem;
+  padding: 0 10rem;
+}
+
+.landLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 580px;
+  margin-left: 5rem;
+}
+
+.land__h4 {
+  width: 248px;
+  height: 29px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  color: #00b3fc;
+}
+
+.land__h1 {
+  width: 580px;
+  height: 138px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 69px;
+  letter-spacing: 0.8px;
+  color: #000000;
+}
+
+.land__h5 {
+  /* width: 645px; */
+  margin-bottom: 1rem;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  color: #383a47;
+}
+
+.bottomImage {
+  display: flex;
+  gap: 1rem;
+}
+
+.landRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 580px;
+}
+
+.image__bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.icons {
+  display: flex;
+  margin-right: 2rem;
+  gap: 1rem;
+}
+
+@media (max-width: 800px) {
+  .land {
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0.1rem;
+  }
+  .landLeft {
+    width: 90%;
+    margin: 1rem;
+    align-items: flex-start;
+  }
+
+  .landLeftTop {
+    width: 90%;
+  }
+  .land__h4 {
+    width: 90%;
+    height: 100%;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: #00b3fc;
+  }
+
+  .land__h1 {
+    width: 90%;
+    height: 100%;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .land__h5 {
+    width: 90%;
+    display: flex;
+    font-size: 12px;
+    line-height: 120%;
+  }
+  .firstImage {
+    display: none;
+  }
+
+  .bottomImage {
+    padding-right: 2rem;
+  }
+  .landRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 1rem;
+  }
+  .landRight img {
+    width: 100%;
+  }
+  .image__bottom {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2rem;
+  }
+  .image__section {
+    width: 100%;
+  }
+}

@@ -1,0 +1,126 @@
+.homepage {
+  /* background: url("../../../assets/Summer\ House.png"); */
+  background: linear-gradient(180deg, rgba(0, 3, 41, 0) 0%, #000329 90.42%),
+    url("../../../assets/Summer\ House.png");
+  width: 100%;
+  background-size: cover;
+  height: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homepage__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 280px;
+  gap: 1rem;
+}
+
+.homepage h1 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 120%;
+  text-align: center;
+  text-transform: uppercase;
+
+  background: linear-gradient(92.47deg, #00b3fc 1.25%, #ffefa5 89.64%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.homepageh4 {
+  width: 700px;
+  height: 72px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+.homepage__content .watch {
+  width: 99px;
+  height: 27px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  text-decoration-line: underline;
+  color: #ffffff;
+  margin-left: 3rem;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .homepage {
+    /* background: url("../../../assets/Summer\ House.png"); */
+    background: linear-gradient(180deg, rgba(0, 3, 41, 0) 0%, #000329 90.42%),
+      url("../../../assets/Summer\ House.png");
+    width: 100%;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 100px;
+    margin-bottom: 4rem;
+  }
+  .homepage__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    top: 280px;
+    gap: 1rem;
+    width: 100%;
+    margin: 2rem;
+  }
+  .homepage h1 {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 67.2px;
+    display: flex;
+    width: 100%;
+  }
+  .homepageh4 {
+    width: 100%;
+    height: 100%;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+  }
+
+  h4 .icon {
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: 2rem; */
+  }
+  .homepage__content .watch {
+    width: 100%;
+    height: 50%;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    margin: 0 1rem;
+    cursor: pointer;
+  }
+}

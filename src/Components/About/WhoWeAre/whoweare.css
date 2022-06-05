@@ -1,0 +1,139 @@
+.whoContainer {
+  background: linear-gradient(180deg, #000329 11.77%, rgba(0, 3, 41, 0) 71.15%),
+    url("../../../assets/Unknown-3.png");
+  height: 974px;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 3rem;
+}
+
+.whoLeft {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  justify-content: center;
+  padding-left: 1rem;
+  margin-left: 2rem;
+  /* align-items: flex-start; */
+}
+
+.left__top {
+  display: flex;
+  justify-content: center;
+}
+.left__middle {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 7rem;
+}
+.left__bottom {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 7rem;
+}
+
+.whoRight {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 8rem 0 0;
+}
+
+.right__h4 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  background: linear-gradient(92.47deg, #00b3fc 1.25%, #ffe672 89.64%), #00b3fc;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.right__h1 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.right__h5 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #ffffff;
+}
+
+@media (max-width: 800px) {
+  .whoContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: column-reverse;
+    height: 100%;
+  }
+  .whoLeft {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .left__top {
+    display: flex;
+    /* justify-content: center; */
+    margin: 0.5rem 4rem 0.5rem 3rem;
+  }
+  .left__middle {
+    display: flex;
+    justify-content: center;
+    margin: 0rem 1rem 0rem 5rem;
+  }
+  .left__bottom {
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem 5rem 0.5rem 2rem;
+  }
+
+  .left__top img {
+    width: 100%;
+  }
+  .left__middle img {
+    width: 100%;
+  }
+  .left__bottom img {
+    width: 100%;
+  }
+
+  .whoRight {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    align-items: flex-start;
+
+    margin: 2rem;
+    padding: 0;
+  }
+  .right__h5 {
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+  }
+  .right__h4 {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .right__h1 {
+    font-size: 32px;
+    line-height: 38.4px;
+  }
+}

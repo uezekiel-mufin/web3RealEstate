@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { useState } from "react";
+import Navbar from "./Components/Home/Navbar/Navbar";
+import Homepage from "./Components/Home/HomePage/Homepage";
+import About from "./Components/About/About";
+import "./App.css";
+import Roadmap from "./Components/Roadmap/Roadmap";
+import TheTeam from "./Components/TheTeam/TheTeam";
+import Faqs from "./Components/FAQs/Faqs";
+import Community from "./Components/Community/Community";
+import Modal from "./Components/Home/Modal/Modal";
+import Contact from "./Components/Contact/Contact";
 function App() {
+  const [showModal, setShowModal] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar setShowModal={setShowModal} />
+      <Homepage />
+      <Modal showModal={showModal} setShowModal={setShowModal} />
+      <About />
+      <Roadmap />
+      <TheTeam />
+      <Faqs />
+      <Community />
+      <Contact />
+    </>
   );
 }
 

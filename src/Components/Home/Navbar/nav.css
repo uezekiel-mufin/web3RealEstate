@@ -1,0 +1,97 @@
+.appbar {
+  background: #070632;
+}
+
+.links {
+  list-style-type: none;
+  display: flex;
+  margin-top: 1rem;
+  gap: 3rem;
+}
+
+.noLinks {
+  display: none;
+}
+
+li {
+  font-size: 18px;
+  font-family: "Euclid Circular A";
+  font-style: normal;
+  font-weight: 100;
+
+  line-height: 24px;
+}
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 3rem;
+}
+.toolbar button {
+  background: radial-gradient(
+    86.98% 799.82% at 50% -51.51%,
+    #000817 0%,
+    #00c5ff 100%
+  );
+  background-blend-mode: screen;
+  mix-blend-mode: screen;
+  font-size: 16px;
+  border: 2px solid #e6a300;
+}
+
+.toolbar Button {
+  color: #ffffff;
+  text-transform: lowercase;
+}
+
+.menuIcons {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 1rem;
+  }
+  .links {
+    display: none;
+  }
+
+  .menuIcons {
+    display: contents;
+  }
+
+  .noLinks {
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    align-items: flex-start;
+    /* background: rgb(15, 15, 15); */
+    background: rgb(7, 7, 7);
+    width: 200%;
+    position: absolute;
+    top: 60px;
+    text-align: center;
+    cursor: pointer;
+    animation-duration: 0.5s;
+    animation-name: fadeInOut;
+    border-radius: 2rem;
+    padding: 3rem;
+    left: 0;
+    right: 0;
+  }
+  @keyframes fadeInOut {
+    from {
+      margin-top: -5%;
+      width: 120%;
+    }
+
+    to {
+      margin-bottom: 100%;
+      width: 120%;
+    }
+  }
+}

@@ -1,0 +1,112 @@
+.roadmap {
+  padding-top: 4rem;
+}
+
+.roadmapBody {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.roadmap h2 {
+  display: flex;
+  justify-content: center;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 120%;
+
+  text-transform: uppercase;
+
+  background: linear-gradient(92.47deg, #00b3fc 1.25%, #ffefa5 89.64%), #ffffff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.road {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  background: #081f51;
+  border: 1rem soild #3961b7;
+  width: 320px;
+  padding: 2rem 2rem 4rem 2rem;
+  border-radius: 1rem;
+  margin: 1.5rem;
+}
+
+.item__h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+
+  color: #ffffff;
+}
+
+.item ul {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+li {
+  /* font-style: normal; */
+  font-size: 20px;
+  /* line-height: 36px; */
+  /* or 150% */
+
+  color: #ffffff;
+}
+
+@media (max-width: 800px) {
+  .roadmapBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    position: relative;
+  }
+  .logo {
+    position: absolute;
+    left: 1rem;
+    margin-right: 2rem;
+  }
+  .roadmap h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+  .item {
+    width: 271px;
+    padding: 1rem 1rem 2rem 1rem;
+    margin: 1rem 1rem;
+  }
+  .item__h1 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  .item ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  li {
+    font-size: 14px;
+  }
+}

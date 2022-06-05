@@ -1,0 +1,94 @@
+.community {
+  background: linear-gradient(0deg, rgba(0, 3, 41, 0.5), rgba(0, 3, 41, 0.5)),
+    url("../../assets/Unknown-3.png");
+
+  height: 760px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 2rem;
+}
+
+.community h1 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 120%;
+  width: 50%;
+  text-align: center;
+  text-transform: uppercase;
+
+  background: linear-gradient(92.47deg, #00b3fc 1.25%, #ffe672 89.64%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.community h3 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  width: 45%;
+
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.community Button {
+  background: radial-gradient(
+    60.59% 557.17% at 92.79% -260.55%,
+    #00c5ff 0%,
+    #000817 150%
+  );
+
+  background-blend-mode: screen;
+  mix-blend-mode: screen;
+  opacity: 1;
+  cursor: pointer;
+  font-family: "Euclid Circular A";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 1rem 2rem;
+  line-height: 24px;
+  color: #ffffff;
+  border: 0.5rem solid #f5d36c;
+  border-radius: 1rem;
+}
+
+@media (max-width: 800px) {
+  .community {
+    height: 812px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+    padding: 0 1rem;
+  }
+  .community h1 {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .community h3 {
+    font-size: 14px;
+    line-height: 24px;
+    width: 100%;
+    margin: 0 1rem;
+    text-align: center;
+
+    color: #ffffff;
+  }
+}
