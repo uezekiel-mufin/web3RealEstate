@@ -16,11 +16,18 @@ const Navbar = ({ setShowModal }) => {
             {open ? <CloseIcon /> : <MenuIcon />}
           </div>
           <ul className={open ? "noLinks" : "links"}>
-            <li>About</li>
-            <li>Roadmap</li>
-            <li>Gameplay</li>
-            <li>Team</li>
-            <Button onClick={() => setShowModal(true)}>Connect Wallet</Button>
+            <li onClick={() => setOpen(!open)}>About</li>
+            <li onClick={() => setOpen(!open)}>Roadmap</li>
+            <li onClick={() => setOpen(!open)}>Gameplay</li>
+            <li onClick={() => setOpen(!open)}>Team</li>
+            <Button
+              onClick={() => {
+                setShowModal(true);
+                setOpen(!open);
+              }}
+            >
+              Connect Wallet
+            </Button>
           </ul>
         </Toolbar>
       </AppBar>

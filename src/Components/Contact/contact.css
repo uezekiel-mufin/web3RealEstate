@@ -104,3 +104,9 @@ form {
 .form Button {
   font-size: 1rem;
 }
+
+.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+}

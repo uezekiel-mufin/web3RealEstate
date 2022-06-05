@@ -76,6 +76,9 @@ li {
     margin-top: 1.5rem;
     position: relative;
   }
+  .road {
+    margin-left: 2rem;
+  }
   .logo {
     position: absolute;
     left: 1rem;

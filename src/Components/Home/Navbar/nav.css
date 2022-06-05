@@ -63,6 +63,12 @@ li {
     display: contents;
   }
 
+  .noLinks li {
+    font-size: 1rem;
+    font-weight: 400;
+    list-style-type: none;
+  }
+
   .noLinks {
     transition: all 0.5s ease-in-out;
     display: flex;
@@ -70,18 +76,19 @@ li {
     row-gap: 2rem;
     align-items: flex-start;
     /* background: rgb(15, 15, 15); */
-    background: rgb(7, 7, 7);
-    width: 200%;
+    background: rgb(14, 14, 66);
+    /* width: 100%; */
     position: absolute;
-    top: 60px;
+    top: 50px;
     text-align: center;
     cursor: pointer;
     animation-duration: 0.5s;
     animation-name: fadeInOut;
     border-radius: 2rem;
     padding: 3rem;
-    left: 0;
-    right: 0;
+
+    left: -1rem;
+    right: -1rem;
   }
   @keyframes fadeInOut {
     from {

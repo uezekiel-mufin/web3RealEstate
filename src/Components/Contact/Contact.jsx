@@ -122,6 +122,7 @@ const Contact = () => {
                 border: "1px solid rgba(255, 255, 255, 0.05)",
                 background: "rgba(255, 255, 255, 0.1)",
                 marginBottom: "2rem",
+                color: "#ffffff",
               }}
             >
               {selectData.map((data, index) => (

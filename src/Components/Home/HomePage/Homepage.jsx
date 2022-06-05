@@ -15,7 +15,7 @@ const Homepage = () => {
           <PlayCircleOutlineIcon
             style={{
               boxSizing: "border-box",
-
+              color: "#ffffff",
               fontSize: "56px",
               height: "56px",
               cursor: "pointer",
